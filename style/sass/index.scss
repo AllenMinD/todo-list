@@ -1,0 +1,129 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../img/background.jpeg");
+}
+
+main {
+  font-size: 1.2em;
+}
+
+header {
+  text-align: center;
+  position: relative;
+  color: white;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+section {
+  position: relative;
+  opacity: 0;
+  background-color: #4aacff;
+  width: 29.32%;
+  float: left;
+  margin: 0 1%;
+  padding: 0 1%;
+  border-radius: 20px;
+  box-shadow: 5px 5px #999;
+}
+
+#leftColum {
+  left: -3000px;
+  transition: left 2s, opacity 6s;
+}
+
+#middleColum {
+  left: -2000px;
+  transition: left 2s, opacity 4s;
+}
+
+#rightColum {
+  left: -1000px;
+  transition: left 2s, opacity 2s;
+}
+
+section {
+  h2 {
+    text-align: center;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.do-list {
+  li {
+    margin: 10px;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 4px 4px #999;
+    word-wrap: break-word;
+    text-align: center;
+    &:hover {
+      background-color: #fbfbfb;
+      cursor: move;
+    }
+    &:active {
+      transform: translate(2px, 2px);
+    }
+    input {
+      width: 98%;
+      -web-kit-appearance:none;
+      -moz-appearance: none;
+      outline:0;
+      height: 30px;
+      border-radius: 4px;
+      border: 1px solid #c8cccf;
+      color: #6a6f77;
+    } 
+  }
+}
+
+$buttonRadius: 50px;
+#newToDoBtn {
+  position: absolute;
+  top: -25px;
+  left: 45%;
+  border-radius: 100%;
+  width: $buttonRadius;
+  height: $buttonRadius;
+  background: #00f600;
+  border: none;
+  font-size: 40px;
+  font-weight: bold;
+  box-shadow: 3px 5px 10px grey;
+  &:hover {
+    cursor: pointer;
+    color: white;
+  }
+  &:active {
+    transform: translate(2px, 2px);
+  }    
+  &:focus {
+    outline: none;
+  }
+}
+
+#trashBin {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+  border-radius: 10px;
+  background: red;
+  &:hover {
+    color: white;
+    box-shadow: 0px 0px 30px #999 inset;
+  }
+}

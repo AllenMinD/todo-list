@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo - List</title>
+  <link rel="stylesheet" href="style/stylesheets/index.css">
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <header>
+    <h1>Todo List</h1>
+    <p>by Allenmind <time>2018-02-08</time></p>
+    <aside id="trashBin" ondragover="dragOver(event)" ondrop="droppedDelete(event)">
+      <span class="fa fa-trash fa-4x"></span>
+    </aside>
+  </header>
+
+  <main>
+    <section id="leftColum">
+      <h2>All Todo List</h2>
+      <button id="newToDoBtn">+</button>
+      <ul id="allToDoList" class="do-list"  ondragover="dragOver(event)" ondrop="dropped(event)">
+
+      </ul>
+    </section>
+
+    <section id="middleColum">
+      <h2>Now Todo List</h2>
+      <ul class="do-list" ondragover="dragOver(event)" ondrop="dropped(event)">
+
+      </ul>
+    </section>
+
+    <section id="rightColum">
+      <h2>Done List</h2>
+      <ul class="do-list" ondragover="dragOver(event)" ondrop="dropped(event)">
+
+      </ul>
+    </section>
+  </main>
+
+  <!-- <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script> -->
+  <script src="script/index.js"></script>
+</body>
+</html>
